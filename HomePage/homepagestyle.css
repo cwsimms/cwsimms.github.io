@@ -176,6 +176,7 @@ main {
     flex: none;
     order: 0;
     flex-grow: 0;
+    white-space: nowrap;
 }
 
 #subtitle-text {
@@ -512,10 +513,31 @@ main {
     }
 }
 
+@media only screen and (max-width: 762px) {
+
+    #hello-text {
+        font-size: 48px;
+    }
+
+    #subtitle-text {
+        margin-top: 0px;
+    }
+}
+
 @media only screen and (max-width: 640px) {
     #project-grid {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #hello-text {
+        font-size: 36px;
+    }
+
+    #subtitle-text {
+        font-size: 20px;
     }
 }
 
@@ -538,10 +560,10 @@ main {
 
 @media only screen and (max-width: 450px) {
     #hello-text {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     #subtitle-text {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
