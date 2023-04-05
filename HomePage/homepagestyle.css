@@ -238,8 +238,8 @@ main {
 
 /*START PROJECT TILE*/
 .project-tile {
-    width: 276.48px;
-    height: 276.48px;
+    width: 300px;
+    height: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -249,26 +249,12 @@ main {
     padding: 4px;
 }
 
-.project-image-wrapper {
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
-    display: flex;
-}
-
-.project-image {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
-    z-index: -2;
-    mix-blend-mode: multiply;
-}
-
 .project-title-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: linear-gradient(180deg, rgba(251, 251, 251, 0.8) 0%, rgba(251, 251, 251, 0.5) 100%);
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     height: 100px; /*not actually 100px, just filling space*/
 }
 
@@ -286,6 +272,43 @@ main {
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
+    line-height: 28px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    color: #0066FF;
+}
+
+.project-image-wrapper {
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0px 0px 0px 0px;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
+.project-desc-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(251, 251, 251, 0.8) 0%, rgba(251, 251, 251, 0.5) 100%);
+    border-radius: 0px 0px 15px 15px;
+    height: auto; /*not actually 100px, just filling space*/
+}
+
+.project-desc {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
     line-height: 28px;
     padding-top: 17.5px;
     padding-bottom: 17.5px;
@@ -373,7 +396,7 @@ main {
     }
 }
 
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2100px){
     #project-grid {
         display: flex;
         flex-direction: row;
@@ -443,7 +466,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 955px) {
+@media only screen and (max-width: 1030px) {
     /*make project grid responsive*/
     #project-grid {
         grid-template-columns: repeat(2, auto);
@@ -524,7 +547,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 670px) {
     #project-grid {
         display: flex;
         flex-direction: column;
