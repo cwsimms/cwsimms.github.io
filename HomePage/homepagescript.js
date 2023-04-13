@@ -1,0 +1,3 @@
+function toggleOverlay(element, visibility) {
+    
+}
