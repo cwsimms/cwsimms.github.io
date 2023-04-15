@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <script>homepagescript.js</script>
+    <script src="homepagescript.js"></script>
 
     <nav id="navbar">
         <h2 id="nav-title">Christopher Simms</h2>
@@ -20,7 +20,7 @@
     </nav>
 
     <main id="main-section">
-        <div id="project-overlay-bg">
+        <div id="project-overlay-bg" onclick="toggleOverlay(this)">
             <div id="project-overlay">
                 <h2 id="project-overlay-title">Project Title</h2>
                 <!--May need to wrap these-->
@@ -41,72 +41,79 @@
             <h3 id="project-header">Here are some projects I've worked on: </h3>
 
             <!--BEGIN PROJECT TILE GRID-->
+            <!--Yeah, I know this is terrible, but it's a Q&D implementation. Will probably convert to React at some point.-->
             <div id="project-grid">
                 <div class="project-tile" id="project-tile-1">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
                 <div class="project-tile" id="project-tile-2">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
                 <div class="project-tile" id="project-tile-3">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
                 <div class="project-tile" id="project-tile-4">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
                 <div class="project-tile" id="project-tile-5">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
                 <div class="project-tile" id="project-tile-6">
                     <div class="project-title-wrapper">
-                        <a class="project-title" href="#">Project Title</a>
+                        <p class="project-title" onclick="toggleOverlay(this)">Project Title</p>
                     </div>
                     <div class="project-image-wrapper">
                         <img class="project-image" src="../placeholder-image.png" alt="A placeholder image."/>
                     </div>
                     <div class="project-desc-wrapper">
-                        <p class="project-desc">This is a sample project description detailing the features and development process of this project. During the course of this project I did some things and some other things.</p>
+                        <p class="project-desc">This is a sample project description detailing the features and development process of this project.</p>
                     </div>
+                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
                 </div>
             </div>
             <!--END PROJECT TILE GRID-->

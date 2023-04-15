@@ -364,6 +364,10 @@ main {
     height: max-content;
     color: #0066FF;
 }
+
+.project-desc-long {
+    display: none;
+}
 /*END PROJECT TILE*/
 /*END PROJECTS SECTION*/
 
