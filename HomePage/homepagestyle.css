@@ -539,6 +539,29 @@ main {
     }
 }
 
+@media only screen and (max-width: 875px) {
+    #project-overlay {
+        margin-top: 15%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #project-overlay-title {
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    #project-overlay-content {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+
+    #project-overlay-image {
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     #navbar {
         max-height: 128px;
@@ -588,6 +611,10 @@ main {
         margin-top: 34px;
         margin-bottom: 34px;
     }
+
+    #project-overlay {
+        margin-top: 25%;
+    }
 }
 
 @media only screen and (max-width: 815px) {
@@ -608,12 +635,25 @@ main {
     #subtitle-text {
         margin-top: 0px;
     }
+
+    #project-overlay {
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 670px) {
     #project-grid {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #project-overlay {
+        margin-top: 30%;
     }
 }
 
@@ -641,6 +681,12 @@ main {
         margin-top: 3vw;
         margin-bottom: 3vw;
         
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #project-overlay {
+        margin-top: 50%;
     }
 }
 
