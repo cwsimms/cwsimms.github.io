@@ -599,6 +599,7 @@ main {
 
     #project-overlay {
         margin-top: 25%;
+        align-items: center;
     }
 
     #project-overlay-title {
@@ -609,12 +610,16 @@ main {
     #project-overlay-content {
         flex-direction: column;
         margin-left: 20px;
-        margin-right: 20px
+        margin-right: 20px;
+        align-items: center;
+        width: auto;
     }
 
     #project-overlay-image {
         border-radius: 20px 20px 0px 0px;
+        width: 100%;
     }
+    
 }
 
 @media only screen and (max-width: 815px) {
