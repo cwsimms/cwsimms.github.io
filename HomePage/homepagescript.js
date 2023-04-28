@@ -19,7 +19,7 @@ function updateOverlay(inElement) {
             document.getElementById("project-overlay-image").setAttribute("src", tileImage.getAttribute("src"));
         }
         else if (child.className == "project-desc-long") {
-            document.getElementById("project-overlay-desc").innerText = child.innerText;
+            document.getElementById("project-overlay-desc").innerHTML = child.innerHTML;
         }
        }
     }
