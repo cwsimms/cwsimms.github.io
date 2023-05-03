@@ -67,7 +67,8 @@
                             <ul>
                                 <li>built-in network and split-screen support</li>
                                 <li>basic menu UI such as a server browser, host game configuration, pause menu, etc. using UMG</li>
-                                <li>gamepad support, including aim assist.</li> 
+                                <li>gamepad support, including aim assist</li>
+                                <li>in later versions, basic AI bots</li>
                             </ul>
                                 <p>I started development on it in college (roughly late 2016) and shipped version 1.0 in November 2017. I then supported it for about three years with updates and patches before deprecating it in 2020.</p>
                                 <p>You can find it on the Unreal Marketplace <a href="https://www.unrealengine.com/marketplace/en-US/product/fps-wizard">here</a> or play a demo <a href="https://drive.google.com/file/d/1RfU256Hoj9LfmO7P9Wr6g4k1luL3Kv2w/view?usp=share_link">here.</a> (Windows only)</p>
@@ -97,7 +98,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <p>This project never made it to market due to financial constraints and other factors, but the game is playable in a greybox format.</p>
+                        <p>This project never made it to market due to financial constraints and other factors, but the game is playable <a href="#">here.</a> (albeit in a graphically unpolished state)</p>
                     </div>
                 </div>
                 <div class="project-tile" id="project-tile-3">
@@ -110,7 +111,40 @@
                     <div class="project-desc-wrapper">
                         <p class="project-desc">You. Dozens of bad guys. ONEMAG. An in-progress shooter based around limited ammo.</p>
                     </div>
-                    <p class="project-desc-long">During the course of this project I did some things and some other things.</p>
+                    <div class="project-desc-long">
+                        <p>
+                            ONEMAG is an FPS I'm currently working on. I started working on it in early 2019, and have been working off and on on it since then. <br/>
+                            The core concept is forcing the player to continously switch weapons (ala the Matrix lobby shootout) and adapt their tactics quickly.
+                            One major change in this project was starting with a well-specified design document before implementing anything. Some elements didn't end up being fun in practice and were cut, but most of the document is still applicable.
+                            Some features I've implemented so far:
+                        </p>
+                        <ul>
+                            <li>
+                                A "planning" phase in which the player starts each level with a "wireframe" overhead view highlighting enemies using a stencil buffer. 
+                                The player can see info about enemies by mousing over them (including ammo, health, type, etc.) and can "tag" enemies that they'd like to prioritize killing.
+                            </li>
+                            <li>
+                                An extensive AI system, with features such as:
+                                <ul>
+                                    <li>
+                                        Squads--members are assigned in the level editor, and each member is then dynamically assigned a role within that squad based on certain traits they have.
+                                    </li>
+                                    <li>
+                                        Behavior states that change depending on stimuli, health, and squad states (ie flee, engage, search, patrol, etc.)
+                                    </li>
+                                    <li>
+                                        Depending on a squad's makeup of roles, AI can engage in some coordinated behaviors such as flanking and bounding overwatch (one soldier suppresses while the other moves up)
+                                    </li>
+                                    <li>
+                                        Patrol paths are objects (basically splines) that can be placed and modified in the level editor.
+                                    </li>
+                                    <li>
+                                        Support for pre-placed firing positions (inspired by Halo's AI system), allowing greater control over encounters from a level design perspective. This was done using a modified implementation of Unreal's EQS system.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="project-tile" id="project-tile-4">
                     <div class="project-title-wrapper">
