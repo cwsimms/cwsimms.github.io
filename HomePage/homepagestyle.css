@@ -282,19 +282,7 @@ main {
     height: fit-content;
 }
 
-#project-grid {
-
-    width: 1030px;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 50%;
-    place-items: center;
-    place-content: center;
-    justify-items: center;
-    grid-column-gap: 50px;
-    grid-row-gap: 64px;
-}
+#project-grid {width: 1030px;height: fit-content;display: grid;grid-template-columns: repeat(2, auto);grid-template-rows: 50%;place-items: center;place-content: center;justify-items: center;grid-column-gap: 50px;grid-row-gap: 64px;}
 
 /*START PROJECT TILE*/
 .project-tile {
@@ -463,7 +451,7 @@ main {
     }
 }
 
-@media only screen and (min-width: 2100px){
+@media only screen and (min-width: 1400px){
     #project-grid {
         display: flex;
         flex-direction: row;
