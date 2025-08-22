@@ -41,7 +41,7 @@ body {
     padding-bottom: 0.48vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: space-around;
@@ -740,5 +740,11 @@ main {
 
     #subtitle-text {
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 245px) {
+    #navbar{
+        flex-wrap: wrap;
     }
 }
